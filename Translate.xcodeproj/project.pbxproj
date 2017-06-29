@@ -14,9 +14,13 @@
 		CDE209611EDBD33E00F845D5 /* Translate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDE2095F1EDBD33E00F845D5 /* Translate.xcdatamodeld */; };
 		CDE209631EDBD33E00F845D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE209621EDBD33E00F845D5 /* Assets.xcassets */; };
 		CDE209661EDBD33E00F845D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE209641EDBD33E00F845D5 /* LaunchScreen.storyboard */; };
+		CFE6F36F027FCAA44C397FF2 /* libPods-Translate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C033B8B467F1A3665A0F933 /* libPods-Translate.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C033B8B467F1A3665A0F933 /* libPods-Translate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Translate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC65B93D0F00BE5C4C276A6 /* Pods-Translate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Translate.release.xcconfig"; path = "Pods/Target Support Files/Pods-Translate/Pods-Translate.release.xcconfig"; sourceTree = "<group>"; };
+		B0045A0D47C9F7BDD4C18F80 /* Pods-Translate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Translate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Translate/Pods-Translate.debug.xcconfig"; sourceTree = "<group>"; };
 		CDE209501EDBD33E00F845D5 /* Translate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE209541EDBD33E00F845D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CDE209561EDBD33E00F845D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE6F36F027FCAA44C397FF2 /* libPods-Translate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B0512B68199AEA458C50CAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C033B8B467F1A3665A0F933 /* libPods-Translate.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1EDC7D564135CF9D798AC58C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0045A0D47C9F7BDD4C18F80 /* Pods-Translate.debug.xcconfig */,
+				AFC65B93D0F00BE5C4C276A6 /* Pods-Translate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CDE209471EDBD33E00F845D5 = {
 			isa = PBXGroup;
 			children = (
 				CDE209521EDBD33E00F845D5 /* Translate */,
 				CDE209511EDBD33E00F845D5 /* Products */,
+				1EDC7D564135CF9D798AC58C /* Pods */,
+				1B0512B68199AEA458C50CAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDE2096A1EDBD33E00F845D5 /* Build configuration list for PBXNativeTarget "Translate" */;
 			buildPhases = (
+				FAD18F1CBD3ED32ED897CA9C /* [CP] Check Pods Manifest.lock */,
 				CDE2094C1EDBD33E00F845D5 /* Sources */,
 				CDE2094D1EDBD33E00F845D5 /* Frameworks */,
 				CDE2094E1EDBD33E00F845D5 /* Resources */,
+				2E8EABD22B96E6B22EDD7526 /* [CP] Embed Pods Frameworks */,
+				B9AC13F240287BB17FA5CB62 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -113,6 +140,7 @@
 				TargetAttributes = {
 					CDE2094F1EDBD33E00F845D5 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = P525XLSUAW;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -147,6 +175,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E8EABD22B96E6B22EDD7526 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Translate/Pods-Translate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9AC13F240287BB17FA5CB62 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Translate/Pods-Translate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAD18F1CBD3ED32ED897CA9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CDE2094C1EDBD33E00F845D5 /* Sources */ = {
@@ -276,9 +352,13 @@
 		};
 		CDE2096B1EDBD33E00F845D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0045A0D47C9F7BDD4C18F80 /* Pods-Translate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DEVELOPMENT_TEAM = P525XLSUAW;
 				INFOPLIST_FILE = Translate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = patcharat.Translate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,9 +367,13 @@
 		};
 		CDE2096C1EDBD33E00F845D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFC65B93D0F00BE5C4C276A6 /* Pods-Translate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DEVELOPMENT_TEAM = P525XLSUAW;
 				INFOPLIST_FILE = Translate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = patcharat.Translate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -315,6 +399,7 @@
 				CDE2096C1EDBD33E00F845D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
